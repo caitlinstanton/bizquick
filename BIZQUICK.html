@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+      <script src="js/jquery.js"></script>
+      <script src="ToDoList.js"></script>
+      <script src="ToDoListUI.js"></script>
+      <script src='https://cdn.firebase.com/js/client/1.0.15/firebase.js'>
+      </script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Business Startup Help @ Now</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top">Navigate Biz-Quick</a>
+            </li>
+            <li>
+                <a href="#top">Home</a>
+            </li>
+            <li>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <a href="#services">Steps to Starting Your Own Business</a>
+            </li>
+            <li>
+                <a href="#portfolio">Success Stories</a>
+            </li>
+            <li>
+                <a href="#contact">Chat!</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Biz-Quick</h1>
+            <h3>Home Business Start-Up Help</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">So You Want to Start a Small Business?</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>There are over 22 million self employed small businesses in the US alone today. Biz-Quick is here to help you start yours.</h2>
+                    <p class="lead">Learn more about what it takes and the necessary steps for a successful small business.</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Steps to Starting Your Own Business</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Have an Idea</strong>
+                                </h4>
+                                <p>Make sure your idea is possible and unique.</p>
+                                <a href="http://www.thesimpledollar.com/50-side-businesses-you-can-start-on-your-own/" class="btn btn-light">Small Business Ideas</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Create a Business Plan</strong>
+                                </h4>
+                                <p>Consider your target audience, how you plan on financing your business, marketing and advertising, legal structure, your business model, and your competition. Create a name for your business that represents whatever product or service you offer, and make sure it is not already trademarked. </p>
+                                <a href="http://www.entrepreneur.com/landing/224842" class="btn btn-light">How to Make a Business Plan</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Financing</strong>
+                                </h4>
+                                <p>Talk with your bank, get local investors, seek venture capitalists or angel investors, use crowd funding, and approach family and friends. In order to get your business off the ground, research and apply for necessary permits and licenses. Be knowledgeable of local and federal tax and insurance requirements. You may want to seek professional legal advice or do further research.</p>
+                                <a href="http://www.sba.gov/blogs/what-kind-business-insurance-do-you-need" class="btn btn-light">Insurance for Your Business</a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Build a kick-ass website</strong>
+                                </h4>
+                                <p>Taking your business online is a huge step in expanding your market. Companies like Wix can help you take your business to a new level. Using Wix, you can easily make a website for free! </p>
+                                <a href="http://wix.com/" class="btn btn-light">Use Wix now!</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+   <!-- Portfolio -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Successful Small Businesses that Started at Home</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="https://www.nannies4hire.com">
+                                    <img class="img-portfolio img-responsive" src="file://localhost/Users/sabrinabergsten/Desktop/Screen%20Shot%202014-11-08%20at%209.42.29%20PM.png">
+                                </a>
+                                <p>Nannies4Hire started as a small business started by Candi Wingate, and is now partnered with Dr. Phil, TLC, Good Morning America, and CNN</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="https://livingsocial.com">
+                                    <img class="img-portfolio img-responsive" src="file://localhost/Users/sabrinabergsten/Desktop/Screen%20Shot%202014-11-08%20at%209.46.09%20PM.png">
+                                </a>
+                                <p> Started by, now CEO, Tim O'Shaughnessy, this once small business boomed into a now 30 million user community! </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="https://www.shutterfly.com/">
+                                    <img class="img-portfolio img-responsive" src="file:///Users/sabrinabergsten/Desktop/Screen%20Shot%202014-11-09%20at%2012.54.43%20AM.png">
+                                </a>
+                                <p>
+                                    This internet-based publishing service began with only 2 employees, Dan Baum and Eva Manolis, in 1999. Now with over $137 million dollars in revenue and about 1.9 million Facebook likes, this once small business has become extremely successful. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="https://www.apple.com">
+                                    <img class="img-portfolio img-responsive" src="file://localhost/Users/sabrinabergsten/Desktop/Screen%20Shot%202014-11-08%20at%2010.16.52%20PM.png">
+                                </a>
+                                <p>
+                                    Like many tech companies, Apple started in the garage of a young man by the name of Steve Wozniack. Wozniack was an electronics hacker, and he and his long time friend Steve Jobs had an idea to create the world's first personal computer. Now Apple is known to be one of world's most influential companies, worth over $600 billion. 
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+
+    <!-- Callout -->
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <h1>Now that you know where to start . . . 
+            </h1>
+            <h2>LET'S GET TO WORK!</h2>
+        </div>
+    </aside>
+
+   
+    <!-- Call to Action -->
+    <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3><font size="7">Your New Business To Do List!</font></h3>
+                    <!--NEW HTML STARTS HERE-->
+                  
+
+                    
+                        
+            
+                        <div data-role="content">
+                            <p>
+                                    <div align="center"><font size="5">No great business was created without a business plan--what's yours?</font></div>
+                                </p>
+                            <ul id="listoftasks" data-role="listview" data-split-icon="check" data-split-theme="a" data-inset="true"></ul>
+                            <div data-role="content">
+                                
+                                 <input style="color:#006699;" type="text" name="TaskName" ID="newTask" placeholder="Enter a task name:">
+                                 <input style="color:#006699;" type="text" name="TaskNotes" ID="taskNotes" placeholder="Details:">
+                                <input type="button" value="Save" data-theme="b" ID="saveButton">
+                                
+                            </div>
+                        </div>
+        
+                    
+            
+                    <!--NEW HTML STOPS HERE-->
+                </div>
+            </div>
+        </div>
+    </aside>
+<!--MAP
+    
+    <section id="contact" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <br />
+        <small>
+            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+        </small>
+        </iframe>
+    </section>
+-->
+
+    <!-- Footer -->
+
+    <footer>
+    
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    
+                   <h4><strong><font size ="6">Chat With Other Biz-Quick Users Online Now!</font></strong>
+                    </h4>
+                   <div id='messagesDiv'></div>
+                            <input style="background-color:#ffffff;" type='text' id='nameInput' placeholder='Name'>
+                            <input type='text' id='messageInput' placeholder='Message'>
+                            <script>
+                                var myDataRef = new Firebase('https://csscodeday.firebaseio.com/');
+                                $('#messageInput').keypress(function (e) {
+                                    if (e.keyCode == 13) {
+                                        var name = $('#nameInput').val();
+                                        var text = $('#messageInput').val();
+                                        myDataRef.push({name: name, text: text});
+                                        $('#messageInput').val('');
+                                    }
+                                });
+                                myDataRef.on('child_added', function(snapshot) {
+                                    var message = snapshot.val();
+                                    displayChatMessage(message.name, message.text);
+                                });
+                                function displayChatMessage(name, text) {
+                                    $('<div/>').text(text).prepend($('<em/>').text(name+': ')).appendTo($('#messagesDiv'));
+                                    $('#messagesDiv')[0].scrollTop = $('#messagesDiv')[0].scrollHeight;
+                                };
+                            </script>     
+                    <!--<h4><strong>Start Bootstrap</strong>
+                    </h4>
+                    <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; Your Website 2014</p> -->
+                </div>
+            </div>
+        </div>
+        
+    </footer> 
+
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+</body>
+
+</html>
