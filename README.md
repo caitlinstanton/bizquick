@@ -7,5 +7,5 @@ Prototype of a web-application to help startups get a head-start in the business
 
 # Tech Used
 - Website made in HTML, CSS, JavaScript
-- To-Do list made with Python dictionaries
+- To-Do list made with JavaScript
 - Chat made with Firebase
